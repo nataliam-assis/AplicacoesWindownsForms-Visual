@@ -16,8 +16,8 @@ namespace Q5_CadastroSimples
 
             Repositorio.PessoaCadastrada.Add(NovoCadastro);
 
-            lstPessoas.DataSource = null;
-            lstPessoas.DataSource = repositorio;
+            lstPessoas.Items.Add($"Nome: {NovoCadastro.Nome} Idade: {NovoCadastro.Idade}");
+            
             
         }
     }
